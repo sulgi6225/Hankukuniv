@@ -1,0 +1,94 @@
+@charset "uft-8";
+
+
+/*상단유틸메뉴영역*/
+#main_gnb_wrap{width:1500px; margin: 0 auto;height:40px;
+				position:relative;background:#0044af;}
+	 
+#main_gnb{width:1200px;margin:0 auto;}
+
+#gnb ul.left{float: left;}
+#gnb ul.right{float: right;}
+
+#gnb>ul.left>li{float:left;margin-right:4px;width:120px;
+				background: #00163b;height:40px;
+				text-align:center;}
+#gnb>ul.left>li>a{text-align: center;font-weight:bold;
+				font-size:15px;color:white;
+				line-height:40px;}
+#gnb>ul.left>li:hover{background:white;}
+#gnb>ul.left>li:hover a{color:#7d7d7d;}
+
+#gnb>.right>li{float:left; height:40px;padding-left:10px;}
+#gnb>.right>li>a{color:white;font-size:11px;line-height:40px;}
+#gnb>.right>li img{padding: 12px 0;}
+
+/*로고 메뉴영역*/
+
+#logo_wrap{width:1200px;height:120px;margin:0 auto;
+			overflow: hidden;}
+.logo img{float:left;padding:35px 0;}
+#nav{position: relative;right:100px;}
+#logo_wrap>ul>li{float:right;line-height:120px;
+					padding-right:30px;}
+#logo_wrap>ul>li>a{color:#7d7d7d;text-align:center;
+					font-weight:bold;}
+.toggle{padding-top:38px;position: relative;
+		left:905px;}
+
+
+/*로고 오른쪽 메뉴 호버 드롭다운 메뉴*/
+
+#logo_wrap>ul>li>ul>li{display: none;}
+#nav>li>ul.sub li{text-align:center;
+				line-height:30px;position: relative;
+				top:-40px;}
+#logo_wrap>ul>li:hover a{color:black;}
+#logo_wrap>ul>li:hover .sub>li{background:whitesmoke;
+								display: block;
+								padding-bottom:15px:}
+
+/* 비쥬얼 상단 제목 및 아이콘메뉴 */
+
+#visual_wrap{width:1500px; height:1300px;
+		background: url(visual_bg.png);
+		margin: 0 auto;}
+#main_section{width:1200px; height:1300px;
+				margin: 0 auto;}
+#visual{height:260px;float:left;}
+
+#visual p.firstline{color:white;font-size:40px;
+					padding-top:75px;padding-bottom:0;
+					letter-spacing:-5px }
+#visual p.secondline{color:white;font-size:70px;
+					position:relative;top:-40px;
+					font:30px;letter-spacing:-8px;}
+
+#visul_icon{float:right;position:relative;
+			right:-500px;top:-150px;}
+#visul_icon>ul{}
+#visul_icon>ul>li{float:left;padding-left:15px;
+				width:100px;text-align:center;}
+#visul_icon>ul>li>a{color:white;font-weight:bold;}
+
+
+/* 메인비쥬얼 컨텐츠 영역*/
+
+#visul_contents{position:absolute;
+			top:420px;width:1200px;margin:0 auto;}
+div.visual_1{font-size:60px;letter-spacing:-10px;
+	   padding-left:150px;} 
+div.visual_1>p{color:#1651b7;position:absolute;
+			top:50px;left:250px;}
+div.visual_1 .lookinto{width:170px;height:40px;
+			 background:#00163b;
+			  font-color:white;
+			  text-align:center;
+			  line-height:40px;
+			 }
+div.visual_1 .lookinto>a>p{font-size:1em;}
+
+
+
+
+
