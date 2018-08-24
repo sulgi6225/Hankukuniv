@@ -52,43 +52,197 @@
 
 #visual_wrap{width:1500px; height:1300px;
 		background: url(visual_bg.png);
-		margin: 0 auto;}
-#main_section{width:1200px; height:1300px;
-				margin: 0 auto;}
-#visual{height:260px;float:left;}
+		margin: 0 auto;position:relative;}
+#main_section{width:1200px; height:260px;
+			margin: 0 auto;position:absolute;}
+#visual{float:left;position:absolute;}
 
+#visual_title{position: relative;left:150px;
+			width:700px;top:75px;}
 #visual p.firstline{color:white;font-size:40px;
-					padding-top:75px;padding-bottom:0;
-					letter-spacing:-5px }
+					letter-spacing:-5px;}
 #visual p.secondline{color:white;font-size:70px;
-					position:relative;top:-40px;
-					font:30px;letter-spacing:-8px;}
+					 letter-spacing:-8px;
+					 position:relative;top:-30px;}
+									
 
-#visul_icon{float:right;position:relative;
-			right:-500px;top:-150px;}
-#visul_icon>ul{}
-#visul_icon>ul>li{float:left;padding-left:15px;
-				width:100px;text-align:center;}
+#visul_icon{position:absolute;width:500px;
+			height:260px;float:right;
+			top:75px;left:940px;}
+#visul_icon>ul{float:left;}
+#visul_icon>ul>li{float:left;
+				width:105px;text-align:center;}
 #visul_icon>ul>li>a{color:white;font-weight:bold;}
 
 
 /* 메인비쥬얼 컨텐츠 영역*/
 
-#visul_contents{position:absolute;
-			top:420px;width:1200px;margin:0 auto;}
-div.visual_1{font-size:60px;letter-spacing:-10px;
-	   padding-left:150px;} 
-div.visual_1>p{color:#1651b7;position:absolute;
-			top:50px;left:250px;}
-div.visual_1 .lookinto{width:170px;height:40px;
+#visul_contents{position:relative;height:440px;
+			    width:1200px;margin:0 auto;
+				position:relative;top:260px;}
+div#visual_1{font-size:60px;letter-spacing:-10px;
+	 		line-height:65px;} 
+div#visual_1>p{color:#1651b7;position:absolute;
+			top:70px;left:100px;}
+div.lookinto1{width:170px;height:40px;
 			 background:#00163b;
-			  font-color:white;
 			  text-align:center;
 			  line-height:40px;
-			 }
-div.visual_1 .lookinto>a>p{font-size:1em;}
+			  position:absolute;
+			  bottom:80px;left:100px;}
+div.lookinto1 p{color:white;font-size:1em;}
 
 
 
+div#visual_2{position:relative;width:300px;
+			left:800px;top:-360px;}
+#visual_2 p{color:white;padding-left:40px;
+			position:absolute;bottom:160px;
+			letter-spacing:-2px;
+			text-align:left;}
+#visual_2 p.firstline{font-size:38px;color:white;
+					  line-height:38px;top:80px;}
+				  	 
+#visual_2 p.secondline{font-size:18px;color:white;
+					   letter-spacing:-2px;
+					   line-height:22px;}
+
+div.lookinto2{width:170px;height:40px;
+			 background:black;
+			 opacity: 0.6;
+			 border:1px solid khaki;
+			 text-align:center;
+			 line-height:40px;
+			 position:absolute;
+			 bottom:80px;left:40px;}
+
+div.lookinto2 p{color:white;font-size:16px;
+				position: absolute;top:0;}
+
+/*메인비쥬얼 두번째줄*/
+
+/*핫링크*/				
+section#visul_contents_middle{width:1200px;height:300px;
+						position:relative;margin:0 auto;
+						top:260px;}
+div#visual_3{width:300px;height:220px;
+			background-color: #00163b;
+			position:absolute;}
+#visual_3>p.title{color:white;font-size:24px;
+				  /*font-weight:bold;*/
+				  padding-left:22px;padding-top:22px;}
+#visual_3>ul{position:absolute;left:25px;bottom:50px;}
+#visual_3>ul>li{float:left;width:80px;text-align:center;
+				line-height:15px;}
+#visual_3>ul>li>a{color:white;font-size:12px;}
+
+
+/*공지사항*/
+div#visual_4{width:300px;height:220px;
+			background-color: #1651b7;
+			position:absolute;left:300px;}
+#visual_4>p.title{color:white;font-size:21px;
+				  font-weight:bold;
+				  padding-left:22px;padding-top:20px;}
+#visual_4>ul{position:absolute;left:25px;bottom:40px;
+		border-top:1px solid white;padding-top:10px;
+	    width:250px;}
+#visual_4>ul>li{text-align:left;line-height:25px;
+				padding-left:10px;}
+#visual_4>ul>li>a{color:white;font-size:12px;}
+
+
+/*SNS NEWS*/
+#visual_5{width:300px;height:220px;
+		background:white;position:relative;
+		top:-48px;left:300px;}
+#visual_5>p.title{font-size:24px;
+				  font-weight:bold;
+				  padding-left:22px;padding-top:22px;}
+#visual_5>img{position:absolute;left:23px;}
+#visual_5>p.text{color:#929292;font-size:12px;
+				display: inline-block;line-height:20px;
+			    font-weight: bold;position:absolute;
+				left:150px;}
+#visual_5>ul{float:right;position:relative;
+			top:100px;right:25px;}		
+#visual_5>ul>li{float:left;padding-left:2px;}
+
+/*캠퍼스투어*/
+#visual_6{width:300px;height:220px;
+		 position:absolute;top:0;right:-600px;}
+#visual_6 div{width:300px;height:50px;
+			background:black;opacity:0.8;
+		    position:absolute;bottom:0;}
+#visual_6 p.title{font-weight:bold;
+				font-size:21px;line-height:50px;
+				color:white;text-align:center;}		
+
+/*비디오*/
+#visual_7{width:300px;height:220px;top:220px;
+		  position:absolute;left:-300px;}
+#visual_7>a{position:absolute;left:120px;
+			top:80px;}
+#visual_7>a:hover img{width:65px;height:65px;}
+
+/*2017년 신입생모집*/
+#visual_8{width:900px; height:220px;
+		position: relative;top:-48px;}
+#visual_8>p{color:#ff4d3b;font-weight:bold;}		
+#visual_8>p.firstline{font-size:28px;
+					  position:absolute;
+					  top:40px;left:38px;}
+#visual_8>p.secondline{font-size:50px;
+					 position:absolute;
+						left:38px;top:70px;}
+.lookinto3{width:168px;height:40px;
+		   background:#f05749;
+		   position:relative;
+		   line-height:40px;
+			text-align:center;
+		    bottom:120px;left:38px;}
+div.lookinto3 p{color:white;font-size:14px;}
+
+
+/*하단 슬라이드바*/
+#slidebar_wrap{position:relative;
+			   width:1200px;height:60px;
+			   background:white;
+			   top:50px;left:-338px;}
+.slidebar{float: left;}
+.slidebar>p{line-height:60px;font-weight:bold;
+			display: inline-block;}
+.slidebar>p.class{color:#00163b;width:150px;
+				  text-align:center;}
+.slidebar>p.date{color:#3f4043;width:190px;}
+.slidebar>p.subject{color:#a0a0a0;width:278px;
+					letter-spacing:-2px;
+				    font-size:15px}
+.slidebar>p.content{color:#a0a0a0;
+					letter-spacing:-1px;
+					font-size:13px;}
+
+.slide_button{display: block;
+			position: absolute;
+			right:0;}
+
+.slide_button>a.down{position:relative;
+					bottom:10px;}
+						
+
+/*푸터*/
+
+#footer{position:relative;background:white;
+		width: 1600px;height:160px;}
+#footer>nav{position:absolute;left:520px;}
+#footer>nav>div{float:left;padding:20px 10px;
+            	font-size:14px;}
+#footer>nav>div>a{color:#7e7b7b;
+				  font-weight: bold;
+				  line-height:40px;}
+.footerinfo{position:absolute;top:50px;
+			width: 1200px;}
+.footerinfo>p{color:#7e7b7b;
+             font-size:12px;}
 
 
