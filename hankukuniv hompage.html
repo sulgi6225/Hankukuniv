@@ -3,12 +3,17 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="./css/jquery.bxslider.css">
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/jquery.bxslider.js"></script>
 	<title>한국대학교홈페이지</title>
 
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:700" rel="stylesheet">
     <!-- 글씨체:나눔고딕 -->
+
 
 </head>
 <body>
@@ -25,8 +30,8 @@
 					</ul>
 					<ul class="right">
 						<li><a href="#">글자크기</a></li>
-						<li><a href="#"><img src="minus.png"></a>
-						<a href="#"><img src="plus.png"></a></li>
+						<li><a href="#"><img src="./images/minus.png"></a>
+						<a href="#"><img src="./images/plus.png"></a></li>
 						<li><a href="#">찾아오시는길</a></li>
 						<li><a href="#">ENGLISH</a></li>
 						<li><a href="#">사이트맵</a></li>
@@ -37,7 +42,9 @@
 
 		<!-- 로고영역 -->
 		<div id="logo_wrap">
-			<div class="logo"><img src="logo.png"></div>
+			<div class="logo">
+				<img src="./images/logo.png">
+			</div>
 			<ul id="nav">
 				<li><a href="#">학생지원센터</a>
 					<ul class="sub">
@@ -79,11 +86,13 @@
 						<li><a href="#">menu</a></li>
 					</ul>
 				</li>
-			</ul>
-			<div class="toggle">
-				<a href="#"><img src="toggle1.png"></a>
-				<a href="#"><img src="toggle2.png"></a>
-			</div>
+				<li>
+					<div class="toggle"><a href="#">
+					<img src="./images/toggle1.png"></a>
+					<a href="#">
+					<img src="./images/toggle2.png"></a>
+					</div>
+				</li>
 		</div>
 <div id="visual_wrap">
 	<section id="main_section">
@@ -95,17 +104,31 @@
 		</div>
 		<div id="visul_icon">
 			<ul>
-				<li><a href="#"><img src="icon1.png"><br>입학절차안내</a></li>
-				<li><a href="#"><img src="icon2.png"><br>입학설명회</a></li>
-				<li><a href="#"><img src="icon3.png"><br>장학제도</a></li>
-				<li><a href="#"><img src="icon4.png"><br>증명서발급</a></li>
+				<li><a href="#"><img src="./images/icon1.png"><br>입학절차안내</a></li>
+				<li><a href="#"><img src="./images/icon2.png"><br>입학설명회</a></li>
+				<li><a href="#"><img src="./images/icon3.png"><br>장학제도</a></li>
+				<li><a href="#"><img src="./images/icon4.png"><br>증명서발급</a></li>
 			</ul>
 		</div>
 	</section>
 
 	<section id="visul_contents">
 		<div id="visual_1">
-			<img src="visual_1.png">
+			<ul class="slider">
+				<li><img src="./images/visual_1.png"></li>
+				<li><img src="./images/visual_3.png"></li>
+				<li><img src="./images/visual_4.png"></li>
+			</ul>
+			<div class="prevBtn">
+				<a href="#">
+					<img src="./images/btn_prev.png" alt="이전버튼">
+				</a>
+			</div>
+			<div class="nextBtn">
+				<a href="javascript:void(0)"">
+					<img src="./images/btn_next.png" alt="이전버튼">
+				</a>
+			</div>
 			<p><b>한국</b>에서<br><b>시작</b>하는<br>새로운<b>꿈</b><br></p>
 		</div>
 		<div class="lookinto1"><a href="#"><p>자세히보기 ▶</p></a>
@@ -114,7 +137,7 @@
 
 
 		<div id="visual_2">
-			<img src="visual_2.png">
+			<img src="./images/visual_2.png">
 			<p class="firstline">APP으로<br>스마트도서관<br>바로이용하자!<br></p>
 			<p class="secondline">모바일 열람증은<br>도서관 자료실/도서대출 등에<br>사용 할 수 있습니다.</p>
 			<div class="lookinto2"><a href="#"><p>자세히보기 ▶</p></a>
@@ -126,9 +149,9 @@
 		<div id="visual_3">
 			<p class="title">HOT LINK</p>
 			<ul>
-				<li><img src="icon5.png"><a href="#"><br>국제교류<br>센터</a></li>
-				<li><img src="icon6.png"><a href="#"><br>원격지원<br>시스템</a></li>
-				<li><img src="icon7.png"><a href="#"><br>예산/결산<br>공고</a></li>
+				<li><img src="./images/icon5.png"><a href="#"><br>국제교류<br>센터</a></li>
+				<li><img src="./images/icon6.png"><a href="#"><br>원격지원<br>시스템</a></li>
+				<li><img src="./images/icon7.png"><a href="#"><br>예산/결산<br>공고</a></li>
 			</ul>
 		</div>
 
@@ -143,33 +166,33 @@
 
 		<div id="visual_5">
 			<p class="title">SNS NEWS</p>
-			<img src="picture1.png">
+			<img src="./images/picture1.png">
 			<p class="text">한국 대학교는<br>2017학년도 신입생<br>
-			입학식을 3월 2일(목)<br>본교 종합 치육관...</p>
+			입학식을 3월 2일(목)<br>본교 종합 체육관...</p>
 			<ul>
-				<li><a href="#"><img src="facebook.png"></a></li>
-				<li><a href="#"><img src="twitter.png"></a></li>
-				<li><a href="#"><img src="kakaotalk.png"></a></li>
-				<li><a href="#"><img src="instagram.png"></a></li>
+				<li><a href="#"><img src="./images/facebook.png"></a></li>
+				<li><a href="#"><img src="./images/twitter.png"></a></li>
+				<li><a href="#"><img src="./images/kakaotalk.png"></a></li>
+				<li><a href="#"><img src="./images/instagram.png"></a></li>
 			</ul>
 		</div>
 
 		<div id="visual_6">
-			<img src="picture2.png">
+			<img src="./images/picture2.png">
 			<a href="#">
 			<div><p class="title">캠퍼스투어</p></div>
 			</a>
 		</div>
 
 		<div id="visual_7">
-			<img src="video.png">
+			<img src="./images/video.png">
 			<a href="#">
-			<img src="videobutton.png">
+			<img src="./images/videobutton.png">
 			</a>
 		</div>
 
 		<div id="visual_8">
-			<img src="visual_8.png">
+			<img src="./images/visual_8.png">
 			<p class="firstline">2017년 신,편입생2차 모집</p>
 			<p class="secondline">2017.7.1~7.10</p>
 		</div>
@@ -186,8 +209,8 @@
 				<p class="content">성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
 			</div>
 			<div class="slide_button">
-				<a href="#" class="up"><img src="button_up.png"></a><br>
-				<a href="#" class="down"><img src="button_down.png"></a>
+				<a href="#" class="up"><img src="./images/button_up.png"></a><br>
+				<a href="#" class="down"><img src="./images/button_down.png"></a>
 			</div>
 		</div>
 	</div>	
@@ -215,5 +238,25 @@
 			</div>
 		</nav>
 	</footer>
+
+	<script>
+
+		$(document).ready(function(){
+			var myslider = $('.slider').bxSlider({
+				pager:false,
+				controls:false,
+				auto:true
+			});
+			$('.prevBtn').click(function(){
+				myslider.goToPrevSlide();
+				return false;
+			});
+			$('.nextBtn').click(function(){
+				myslider.goToNextSlide();
+				//return false;
+			});
+		});
+
+	</script>
 </body>
 </html>
