@@ -190,17 +190,48 @@
 			<img src="./images/videobutton.png">
 			</a>
 		</div>
+		
+		<div id="slideshow-container">
+			<div class="mySlides fade">
+				<img src="./images/visual_8.png">
+				<p class="firstline02">2017년 신,편입생2차 모집</p>
+				<p class="secondline02">2017.7.1~7.10</p>
+				<div class="lookinto3"><a href="#"><p>입학사전예약 ▶</p></a></div>
+			</div>
+			
 
-		<div id="visual_8">
-			<img src="./images/visual_8.png">
-			<p class="firstline">2017년 신,편입생2차 모집</p>
-			<p class="secondline">2017.7.1~7.10</p>
-		</div>
-		<div class="lookinto3"><a href="#"><p>입학사전예약 ▶</p></a>
+			<div class="mySlides fade">
+				<img src="./images/visual_7.png">
+				<p class="firstline03">2018.02.16(화) 10:00AM</p>
+				<p class="secondline03">2018년 졸업식</p>
+					<div class="lookinto3"><a href="#"><p>자세히보기 ▶</p></a></div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="./images/visual_6.png">
+				<p class="firstline"></p>
+				<p class="secondline"></p>
+				<div class="lookinto4"></div>
+			</div>
+
+			<div class="mySlides fade">
+				<img src="./images/visual_5.png">
+				<p class="firstline"></p>
+				<p class="secondline"></p>
+			<div class="lookinto4"></div>
+			</div>
+
 		<div>
+			
+	<div style="text-align:center">
+ 		 <span class="dot"></span> 
+ 		 <span class="dot"></span> 
+ 		 <span class="dot"></span> 
+ 		 <span class="dot"></span>
+	</div>
 
 		<!-- 하단슬라이드바영역 -->
-	<div>
+	<div id="wrap">
 		<div id="slidebar_wrap">
 			<div class="slidebar">
 				<p class="class">학사일정</p>
@@ -208,14 +239,36 @@
 				<p class="subject">2016-1학기 성적 열람 및 상담 신청</p>
 				<p class="content">성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
 			</div>
-			<div class="slide_button">
-				<a href="#" class="up"><img src="./images/button_up.png"></a><br>
-				<a href="#" class="down"><img src="./images/button_down.png"></a>
+
+			<div class="slidebar">
+				<p class="class">장학안내</p>
+				<p class="date">< 2016.10 ></p>
+				<p class="subject">2018-1학기 장학금 신청 및 상담 신청</p>
+				<p class="content">[교외]푸른등대 기부장학사업 신규장학생 선발 안내(서울캠퍼스)</p>
 			</div>
+
+			<div class="slidebar">
+				<p class="class">채용정보</p>
+				<p class="date">< 2017.03 ></p>
+				<p class="subject">산학총괄</p>
+				<p class="content">한국대학교 연구산학협력단 인문한국플러스사업 연구소전담 행정직원 채용공고(재공고)   </p>
+			</div>
+
+			<div class="slidebar">
+				<p class="class">국제교류</p>
+				<p class="date">< 2017.08 ></p>
+				<p class="subject">2018학년도 3회차 기관토플 접수 안내</p>
+				<p class="content">2018학년도 3회차 기관토플을 아래와 같이 실시하고자 하오니 관심 있는 학생들은...</p>
+			</div>
+
 		</div>
 	</div>	
 	</section>
 </div>
+			<div class="slide_button">
+				<a href="#" class="up"><img src="./images/button_up.png"></a><br>
+				<a href="#" class="down"><img src="./images/button_down.png"></a>
+			</div>
 
 <!-- 푸터영역 -->
 
@@ -258,5 +311,29 @@
 		});
 
 	</script>
+
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
 </body>
 </html>
