@@ -87,13 +87,24 @@
 					</ul>
 				</li>
 				<li>
-					<div class="toggle"><a href="#">
-					<img src="./images/toggle1.png"></a>
-					<a href="#">
-					<img src="./images/toggle2.png"></a>
+					<div id="toggle">
+					<span style="cursor:pointer" onclick="openNav()"><img src="./images/toggle1.png"></span>
+						<div class="toggle">
+							<a href="#"><img src="./images/toggle2.png"></a>
+						</div>
 					</div>
 				</li>
+
+					<div id="mySidenav" class="sidenav">
+  						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  						<a href="#">About</a>
+  						<a href="#">Services</a>
+  						<a href="#">Clients</a>
+  						<a href="#">Contact</a>
+					</div>
+			</ul>
 		</div>
+
 <div id="visual_wrap">
 	<section id="main_section">
 		<div id="visual">
@@ -220,7 +231,6 @@
 				<p class="secondline"></p>
 			<div class="lookinto4"></div>
 			</div>
-
 		<div>
 			
 	<div style="text-align:center">
@@ -237,32 +247,31 @@
 				<p class="class">학사일정</p>
 				<p class="date">< 2016.07 ></p>
 				<p class="subject">2016-1학기 성적 열람 및 상담 신청</p>
-				<p class="content">성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</p>
+				<p class="content"><a href="#">성적열람및 상담신청은 본인이 수강한 교과목 설문조사를 모두 마친 후 확인이...</a></p>
 			</div>
 
 			<div class="slidebar">
 				<p class="class">장학안내</p>
 				<p class="date">< 2016.10 ></p>
 				<p class="subject">2018-1학기 장학금 신청 및 상담 신청</p>
-				<p class="content">[교외]푸른등대 기부장학사업 신규장학생 선발 안내(서울캠퍼스)</p>
+				<p class="content"><a href="#">[교외]푸른등대 기부장학사업 신규장학생 선발 안내(서울캠퍼스)</a></p>
 			</div>
 
 			<div class="slidebar">
 				<p class="class">채용정보</p>
 				<p class="date">< 2017.03 ></p>
 				<p class="subject">산학총괄</p>
-				<p class="content">한국대학교 연구산학협력단 인문한국플러스사업 연구소전담 행정직원 채용공고(재공고)   </p>
+				<p class="content"><a href="#">한국대학교 연구산학협력단 인문한국플러스사업 연구소전담 행정직원 채용공고(재공고)</a></p>
 			</div>
 
 			<div class="slidebar">
 				<p class="class">국제교류</p>
 				<p class="date">< 2017.08 ></p>
 				<p class="subject">2018학년도 3회차 기관토플 접수 안내</p>
-				<p class="content">2018학년도 3회차 기관토플을 아래와 같이 실시하고자 하오니 관심 있는 학생들은...</p>
+				<p class="content"><a href="#">2018학년도 3회차 기관토플을 아래와 같이 실시하고자 하오니 관심 있는 학생들은...</a></p>
 			</div>
 
-		</div>
-	</div>	
+		</div>	
 	</section>
 </div>
 			<div class="slide_button">
@@ -292,7 +301,8 @@
 		</nav>
 	</footer>
 
-	<script>
+<!-- 메인비쥬얼 슬라이드 자바스크립 -->
+<script>
 
 		$(document).ready(function(){
 			var myslider = $('.slider').bxSlider({
@@ -310,9 +320,10 @@
 			});
 		});
 
-	</script>
+</script>
 
-	<script>
+<!-- 하단 비쥬얼섹션 슬라이드 자바스크립 -->
+<script>
 var slideIndex = 0;
 showSlides();
 
@@ -331,6 +342,18 @@ function showSlides() {
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<!-- 토글메뉴 슬라이드 자바스크립 -->
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
 }
 </script>
 
